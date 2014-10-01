@@ -1,0 +1,37 @@
+.main {
+	text-align: center;
+}
+.main input[type="password"] {
+	margin-bottom: 10px;
+}
+.main textarea {
+	min-height: 430px;
+	min-width: 578px;
+	max-width: 578px;
+	font-size: 14px;
+	margin-bottom: 3px;
+}
+.popup {
+	position: absolute;
+	background-color: #34495e;
+	margin: 73px auto 0 auto;
+	left: 0;
+	right: 0;
+	width: 578px;
+	height: 430px;
+	text-align: center;
+	border-radius: 5px;
+	opacity: 0;
+}
+.popup h1 {
+	color: #48c9b0;
+}
+.popup h4 {
+	color: #fff;
+}
+.pop {
+	text-align: center;
+}
+.pop a {
+	display: block;
+}

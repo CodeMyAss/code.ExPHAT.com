@@ -1,0 +1,31 @@
+body {
+	/*background-color: #23241f;*/
+	text-align: center;
+}
+.codeContainer {
+	margin: 0 auto;
+	width: 1078px;
+	text-align: left;
+}
+.btn {
+	background-color: #415b76;
+}
+.hiddenCode {
+	display: none;
+}
+pre {
+	width: 1000px;
+	/*min-height: 220px;*/
+	margin: 0 !important;
+	border-radius: 10px !important;
+	border: none !important;
+}
+code {
+	padding: 2px 0 !important;
+	line-height: 1.4 !important;
+	background-color: transparent !important;
+	font-size: 16px !important;
+}
+.line-highlight {
+	/*margin-top: 4 !important;*/
+}

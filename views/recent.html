@@ -1,0 +1,15 @@
+html
+	head
+		title Recent Uploads
+		link(rel="stylesheet" href="/css/flat-ui.min.css")
+		link(rel="stylesheet" href="/css/main.css")
+
+		script(src="#{jquery}")
+		script(src="/js/flat-ui.min.js")
+		script(src="/socket.io/socket.io.js")
+		script(src="/js/recent.js")
+	body
+		.pop
+		.main
+			input(type="password" placeholder="Password" name="password" class="form-control" required)
+			input(type="button" value="Show" class="btn btn-primary")

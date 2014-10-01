@@ -1,0 +1,16 @@
+{
+  "name": "code.ExPHAT.com",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "colors": "0.6.2",
+    "express": "3.0.0",
+    "mustache": "0.8.2",
+    "node-sha1": "0.0.1",
+    "socket.io": "1.1.0",
+    "sqlite3": "2.2.7"
+  }
+}

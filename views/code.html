@@ -1,0 +1,22 @@
+html
+	head
+		title #{link}
+	
+		meta(charset="utf-8")
+		link(rel="stylesheet" href="/css/prism.css")
+		link(rel="stylesheet" href="/css/code.css")
+		link(rel="stylesheet" href="/css/flat-ui.min.css")
+
+		script(src="#{jquery}")
+		script(src="/js/flat-ui.min.js")
+		script(src="/js/jquery.clipboard.js")
+		script(src="/js/prism.js")
+		script(src="/js/code.js")
+	body
+		.codeContainer
+			input.btn.btn-inverse(type="button" value="Copy")
+			input.btn.btn-inverse(type="button" value="View Raw")
+			pre.line-numbers
+				code #{code}
+		.hiddenCode #{code}
+		script var link = "#{link}"; var lang = #{lang}

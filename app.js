@@ -118,7 +118,7 @@ io.sockets.on('connection', function(socket) {
 
 		// Remove the extra newline characters from code
 		while (code.substr(-1) == "\n") {
-			code = code.substr(0,-1)
+			code = code.substr(0,code.length-1)
 		}
 
 		if (sha1(data.password) == uploadPassword && lang+1 <= languages.length && lang+1 >= 1) { // Ensure password is correct and language exsists
@@ -159,7 +159,7 @@ io.sockets.on('connection', function(socket) {
 				extentions.push(row.link);
 				langs.push(row.lang);
 			}, function() {
-				if (extentions !== []) {
+				if (extentions.length > 0) {
 					socket.emit('recent', [extentions, langs]);
 				}
 				else {
@@ -174,7 +174,7 @@ io.sockets.on('connection', function(socket) {
 	});
 });
 
-// Start express server
+log.info("starting express server...");
 server.listen(app.get('port'), function() {
-	log.info('listening on port ' + app.get('port'));
+	log.ok('listening on port ' + app.get('port'));
 });

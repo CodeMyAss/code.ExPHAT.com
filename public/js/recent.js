@@ -7,14 +7,19 @@ $(document).ready(function() {
 	base = String(window.location).split("/")[2]
 
 	socket.on('recent', function(data) {
-		for (var i = 0; i < data[0].length; i++) {
-			$li = $('<a></a>');
-			$li.text(data[0][i]+" - "+languages[data[1][i]]);
-			$li.attr("href", "http://"+base+"/"+data[0][i]);
-			$('.pop').append($li);
+		if (!data) {
+			console.log("There are no recent items");
 		}
-		$('.main').hide();
-		$('.pop').show();
+		else {
+			for (var i = 0; i < data[0].length; i++) {
+				$li = $('<a></a>');
+				$li.text(data[0][i]+" - "+languages[data[1][i]]);
+				$li.attr("href", "http://"+base+"/"+data[0][i]);
+				$('.pop').append($li);
+			}
+			$('.main').hide();
+			$('.pop').show();
+		}
 	});
 
 	socket.on('password', function(data) {

@@ -1,4 +1,4 @@
-var languages = ['JavaScript', 'CSS', 'Python', 'Markup', 'PHP', 'CoffeScript', 'Bash', 'C', 'C++', 'Ruby', 'Swift', 'Objective-C', 'Haskell'];
+var languages = ['JavaScript', 'CSS', 'Python', 'Markup', 'Java', 'PHP', 'CoffeScript', 'Bash', 'C', 'C++', 'Ruby', 'Swift', 'Objective-C', 'Haskell'];
 
 $(document).ready(function() {
 	$('.pop').hide();

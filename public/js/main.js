@@ -1,7 +1,7 @@
 $(document).ready(function() {
 	$('.popup').hide();
 
-	var languages = ['JavaScript', 'CSS', 'Python', 'Markup', 'PHP', 'CoffeScript', 'Bash', 'C', 'C++', 'Ruby', 'Swift', 'Objective-C', 'Haskell'];
+	var languages = ['JavaScript', 'CSS', 'Python', 'Markup', 'Java', 'PHP', 'CoffeScript', 'Bash', 'C', 'C++', 'Ruby', 'Swift', 'Objective-C', 'Haskell'];
 	for (var i = 0; i < languages.length; i++) {
 		var $thing = $('<option>');
 		$thing.attr("value", i);

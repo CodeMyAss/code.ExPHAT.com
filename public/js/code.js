@@ -1,4 +1,4 @@
-var languages = ['javascript', 'css', 'python', 'markup', 'java', 'php', 'coffescript', 'bash', 'c', 'cpp', 'ruby', 'swift', 'objectivec', 'haskell'];
+var languages = ['javascript', 'css', 'python', 'markup', 'java', 'php', 'coffescript', 'bash', 'c', 'cpp', 'ruby', 'swift', 'objectivec', 'haskell', 'go'];
 
 $(document).ready(function() {
 	$('pre').addClass("language-"+languages[lang]);

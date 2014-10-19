@@ -19,7 +19,7 @@ var db = new sqlite.Database(path.join(process.env.PWD, 'data.db'));
 
 // Set variables used to store possibly non-constant information
 var uploadPassword = 'db25f2fc14cd2d2b1e7af307241f548fb03c312a';
-var languages = ['javascript', 'css', 'python', 'markup', 'java', 'php', 'coffescript', 'bash', 'c', 'cpp', 'ruby', 'swift', 'objectivec', 'haskell'];
+var languages = ['javascript', 'css', 'python', 'markup', 'java', 'php', 'coffescript', 'bash', 'c', 'cpp', 'ruby', 'swift', 'objectivec', 'haskell', 'go'];
 var jquery = "//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js";
 
 // Setup setting for express
